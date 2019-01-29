@@ -88,7 +88,7 @@ namespace discord_rpc_vs
         internal static Settings Settings => Settings.Default;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiscordRPCVS"/> class.
+        /// Initializes a new instance of the <see cref="DiscordRPCVSPackage"/> class.
         /// </summary>
         public DiscordRPCVSPackage()
         {
