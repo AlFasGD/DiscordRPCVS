@@ -14,7 +14,7 @@ namespace discord_rpc_vs
         public string optionalSteamId = string.Empty;
 
         /// <summary>
-        ///     Initializes Discord RPC
+        /// Initializes Discord RPC
         /// </summary>
         public void Initialize()
         {
