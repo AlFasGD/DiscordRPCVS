@@ -42,29 +42,29 @@ namespace discord_rpc_vs
         public const string PackageGuidString = "ea99cd90-97ea-40a5-be3c-2f3377242800";
 
         /// <summary>
-        ///     Discord Controller instance
+        /// Discord Controller instance
         /// </summary>
         internal static DiscordController DiscordController { get; private set; } = new DiscordController();
 
         /// <summary>
-        ///     Keeps track of if we have already initialized the timestamp
+        /// Keeps track of if we have already initialized the timestamp
         /// </summary>
         private bool InitializedTimestamp { get; set; }
 
         /// <summary>
-        ///     The initial timestamp
+        /// The initial timestamp
         /// </summary>
         private long InitialTimestamp { get; set; }
 
         /// <summary>
-        ///     DTE
+        /// DTE
         /// </summary>
         private DTE _dte;
         private Events _dteEvents;
 
         /// <summary>
-        ///     Dictionary in which the key is the file extension, and the value is the 
-        ///     image key for RPC
+        /// Dictionary in which the key is the file extension, and the value is the 
+        /// image key for RPC
         /// </summary>
         private Dictionary<string, string> Languages = new Dictionary<string, string>()
         {
@@ -83,7 +83,7 @@ namespace discord_rpc_vs
         };
 
         /// <summary>
-        ///     Global configuration 
+        /// Global configuration 
         /// </summary>
         internal static Settings Settings => Settings.Default;
 
@@ -124,7 +124,7 @@ namespace discord_rpc_vs
         }
 
         /// <summary>
-        ///     When switching between windows
+        /// When switching between windows
         /// </summary>
         /// <param name="windowActivated"></param>
         /// <param name="lastWindow"></param>
@@ -187,7 +187,7 @@ namespace discord_rpc_vs
         }
 
         /// <summary>
-        ///     Gets path name with correct casing
+        /// Gets path name with correct casing
         /// </summary>
         /// <param name="pathName"></param>
         /// <returns></returns>
