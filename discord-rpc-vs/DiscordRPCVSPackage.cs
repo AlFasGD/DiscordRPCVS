@@ -68,12 +68,12 @@ namespace discord_rpc_vs
         /// </summary>
         private Dictionary<string, string> Languages = new Dictionary<string, string>()
         {
-            { ".cs", "c-sharp"},
+            { ".cs", "c-sharp" },
             { ".cpp", "cpp" },
-            { ".py" , "python"},
+            { ".py", "python" },
             { ".js", "javascript" },
             { ".html", "html" },
-            { ".css", "css"},
+            { ".css", "css" },
             { ".java", "java" },
             { ".go", "go" },
             { ".php", "php" },
