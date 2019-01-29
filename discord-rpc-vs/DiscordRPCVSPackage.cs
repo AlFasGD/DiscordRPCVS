@@ -170,14 +170,14 @@ namespace discord_rpc_vs
             // Initialize timestamp
             if (Settings.IsTimestampShown && !InitializedTimestamp)
             {
-                DiscordController.presence.startTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                DiscordController.presence.startTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
                 InitialTimestamp = DiscordController.presence.startTimestamp;
                 InitializedTimestamp = true;
             }
 
             // Reset it
             if (Settings.IsTimestampResetEnabled && InitializedTimestamp && Settings.IsTimestampShown)
-                DiscordController.presence.startTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                DiscordController.presence.startTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
             // Set it equal to the initial timestamp (To not reset)
             else if (Settings.IsTimestampShown && !Settings.IsTimestampResetEnabled)
                 DiscordController.presence.startTimestamp = InitialTimestamp;
